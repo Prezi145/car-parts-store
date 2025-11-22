@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Checkout - Car Parts Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="site-title">Car Parts Store</div>
+      <nav class="site-nav"><a href="index.html">Home</a><a href="cart.html">Cart</a><a href="checkout.html">Checkout</a><span class="auth-area"></span></nav>
+    </div>
+  </header>
+
+  <main class="container" id="main">
+    <h1>Checkout</h1>
+    <section class="form-card" aria-label="Shipping and payment">
+      <form id="checkout-form" data-subtotal="0" data-discount="0" data-tax="0" data-total="0">
+        <div class="form-row">
+          <div class="field">
+            <label for="ship-name">Full name</label>
+            <input id="ship-name" name="ship-name" type="text" required>
+          </div>
+          <div class="field">
+            <label for="ship-phone">Phone</label>
+            <input id="ship-phone" name="ship-phone" type="text" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label for="ship-address">Address</label>
+            <textarea id="ship-address" name="ship-address" required></textarea>
+          </div>
+        </div>
+        <div>
+          <p class="text-muted">Order total: <strong id="checkout-total"></strong></p>
+        </div>
+        <div style="display:flex; gap:10px;">
+          <button class="btn" type="submit">Confirm Order</button>
+          <button class="btn secondary" type="button" id="cancel-checkout">Cancel</button>
+        </div>
+      </form>
+    </section>
+
+    <section style="margin-top:18px;">
+      <h2>Order Summary</h2>
+      <table class="table" id="checkout-items" aria-live="polite"><thead><tr><th>#</th><th>Product</th><th>Qty</th><th>Line</th></tr></thead><tbody></tbody></table>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container"><p>&copy; 2025 Car Parts Store</p></div></footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Register - Car Parts Store</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header"><div class="container"><div class="site-title">Car Parts Store</div><nav class="site-nav"><a href="index.html">Home</a><a href="cart.html">Cart</a><span class="auth-area"></span></nav></div></header>
+
+  <main class="container" id="main">
+    <h1>Register</h1>
+    <section class="form-card">
+      <form id="register-form" aria-label="Registration form">
+        <div class="form-row">
+          <div class="field">
+            <label for="reg-name">Full name</label>
+            <input id="reg-name" name="reg-name" type="text" required>
+          </div>
+          <div class="field">
+            <label for="reg-dob">Date of birth</label>
+            <input id="reg-dob" name="reg-dob" type="date" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label for="reg-email">Email</label>
+            <input id="reg-email" name="reg-email" type="email" required>
+          </div>
+          <div class="field">
+            <label for="reg-username">Username</label>
+            <input id="reg-username" name="reg-username" type="text" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label for="reg-password">Password</label>
+            <input id="reg-password" name="reg-password" type="password" required>
+          </div>
+        </div>
+        <button class="btn" type="submit">Register</button>
+      </form>
+    </section>
+    <p class="text-muted">We store credentials locally for demo only (not for production).</p>
+  </main>
+
+  <footer class="site-footer"><div class="container"><p>&copy; 2025 Car Parts Store</p></div></footer>
+  <script src="app.js"></script>
+</body>
+</html>
